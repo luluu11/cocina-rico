@@ -1,0 +1,58 @@
+body {
+    background-color: #D7BDE2;
+}
+
+.sinformato {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+a:hover{
+    color: darkorchid;
+    font-weight: bold;
+}
+.texto{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 15px;
+    color: black;
+}
+.texto--th4{
+    font-style: italic;
+    font-weight: bold;
+    color: darkmagenta;
+}
+
+h1 {
+    font-style: italic;
+}
+
+h3 {
+    font-style: italic;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: hotpink;
+}
+form{
+    gap: 100px;
+}
+
+@mixin tamano($width, $height) {   
+    width: $width;
+    height: $height;
+}
+
+.galeria {
+    @include tamano(600px, 400px);
+}
+
+$lista: magenta, ivory, pink, yellow;
+@each $color in $lista {
+    .#{$color} {
+        color: $color;
+    }
+}
